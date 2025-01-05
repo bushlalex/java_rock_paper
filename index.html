@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="maincontainer">
+    <div class="name">Игра Камень/Ножницы/Бумага</div>
+    <div class="pole">
+      <form>
+        <p>Сделайте выбор:<p>
+        <select id="opcii">
+          <option value="Камень">Камень</option>
+          <option value="Ножницы">Ножницы</option>
+          <option value="Бумага">Бумага</option>
+        </select>
+        <button id="yButton" type="submit">Играть!</button> 
+      </form>
+      <div class="contrez">
+        <p id="rezultatraunda"></p>
+      </div>        
+      <div class="schetcompdiv">
+        <p>Очки компьютера:</p>
+        <p id="schetcomp1"></p>
+      </div>
+      <div class="schetvidiv">
+        <p>Ваши очки:</p>
+        <p id="schetvi1"></p>
+      </div>
+      <p class="itogigri"></p>
+      
+          
+  </div>
+<script src="rock.js"></script>
+</body>
+</html>
