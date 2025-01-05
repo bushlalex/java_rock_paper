@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="maincontainer">
-    <div class="name">Игра Камень/Ножницы/Бумага</div>
+    <div class="name">Игра Камень/Ножницы/Бумага до 5 раундов</div>
     <div class="pole">
       <form>
         <p>Сделайте выбор:<p>
@@ -18,7 +18,8 @@
           <option value="Ножницы">Ножницы</option>
           <option value="Бумага">Бумага</option>
         </select>
-        <button id="yButton" onclick="playround(); return false;">Играть!</button> 
+        <button id="yButton" onclick="playGame (schetvi, schetkomp); return false;">Играть!</button>
+        <button id="xButton" onclick="">Начать игру заново</button>
       </form>
       <div class="contrez">
         <p id="rezultatraunda"></p>
@@ -31,7 +32,7 @@
         <p>Ваши очки:</p>
         <p id="schetvi1"></p>
       </div>
-      <p class="itogigri"></p>
+      <p id="itogigri"></p>
       
           
   </div>

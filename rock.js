@@ -1,5 +1,4 @@
-let schetkomp = 0;
-let schetvi = 0;
+
 
 
 
@@ -37,13 +36,13 @@ let schetvi = 0;
             (comp=="Ножницы"&&chel=="Бумага")||
             (comp=="Бумага"&&chel=="Камень")) {
     let element = document.getElementById('rezultatraunda');
-    element.innerHTML = "Вы проиграли!"
-    schetkomp++;
+    element.innerHTML = "Вы проиграли раунд!"
+    ++schetkomp;
     }
     else {
       let element = document.getElementById('rezultatraunda');
-    element.innerHTML ="Вы выиграли!"
-    schetvi++}
+    element.innerHTML ="Вы выиграли раунд!"
+    ++schetvi}
     let element1= document.getElementById('schetvi1')
     element1.innerHTML = schetvi;
     let element2= document.getElementById('schetcomp1')
@@ -54,6 +53,27 @@ let schetvi = 0;
   function playround () {
     return igraodinround(viborcheloveka (), viborkompa ()) 
   }
+
+  function playGame () {
+    playround()
+      
+    if (schetvi<5&&schetkomp<5) {
+
+      document.getElementById('itogigri').innerHTML = "Игра продолжается..."  }
+    else if (schetvi==5) {
+      document.getElementById('itogigri').innerHTML = "Вы выиграли, +25ez!"
+      const button = document.getElementById("yButton");
+      button.style.display = "none"; 
+    }
+    else if (schetkomp==5) {
+      document.getElementById('itogigri').innerHTML = "Вы проиграли, найс баланс...!"
+      const button = document.getElementById("yButton");
+      button.style.display = "none"; 
+    }
+    }  
+  
+  let schetkomp = 0;
+  let schetvi = 0;
   
   
    
