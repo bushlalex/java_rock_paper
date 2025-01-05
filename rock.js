@@ -61,12 +61,12 @@
 
       document.getElementById('itogigri').innerHTML = "Игра продолжается..."  }
     else if (schetvi==5) {
-      document.getElementById('itogigri').innerHTML = "Вы выиграли, +25ez!"
+      document.getElementById('itogigri').innerHTML = "Вы выиграли игру! Поздравляем!"
       const button = document.getElementById("yButton");
       button.style.display = "none"; 
     }
     else if (schetkomp==5) {
-      document.getElementById('itogigri').innerHTML = "Вы проиграли, найс баланс...!"
+      document.getElementById('itogigri').innerHTML = 'Вы проиграли('
       const button = document.getElementById("yButton");
       button.style.display = "none"; 
     }
