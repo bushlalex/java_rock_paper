@@ -1,3 +1,10 @@
+let schetkomp = 0;
+let schetvi = 0;
+
+
+
+
+
 //ФУНКЦИЯ, КОТОРАЯ ГЕНЕРИРУЕТ ВЫБОР КОМПЬЮТЕРА//
     function viborkompa () {
     let x = Math.floor(Math.random(1)*100)
@@ -9,19 +16,14 @@
     }
     else return "Бумага"
   }
+  
    //ФУНКЦИЯ КОТОРАЯ ПРИНИМАЕТ ВЫБОР ЧЕЛОВЕКА//
   function viborcheloveka () {
     let x = document.getElementById('opcii').value;
     return x;
   }
   
-  let schetkomp = 0;
-  let schetvi = 0;
 
-  
-  
-  
-  
   
   //ФУНКЦИЯ КОТОРАЯ СРАВНИВАЕТ РЕЗУЛЬТАТ ЧЕЛОВЕКА И КОМПЬЮТЕРА//
   function igraodinround (chel, comp) {
@@ -44,7 +46,7 @@
     schetvi++}
     let element1= document.getElementById('schetvi1')
     element1.innerHTML = schetvi;
-  let element2= document.getElementById('schetcomp1')
+    let element2= document.getElementById('schetcomp1')
     element2.innerHTML = schetkomp;    
   }
   
@@ -54,8 +56,10 @@
   }
   
   
-  const button = document.querySelector('#yButton');
-  button.addEventListener("submit", playround ())
+   
+  
+
+
     
     
   
